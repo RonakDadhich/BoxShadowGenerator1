@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========Box-Shadow-Starts========== */
+.bx-shadow{
+    background-color: #ffffff;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    /* width: 80vmin; */
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(2,42,83,0.2);
+}
+
+.result{
+    padding: 75px 0;
+}
+
+#element{
+    height: 150px;
+    width: 150px;
+    background-color: #00ff2b;
+    margin: auto;
+}
+
+.sliders{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px 15px;
+}
+
+.slider-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type="range"]{
+    width: 100%;
+    accent-color: #ff0000;
+}
+
+.code-wrapper{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+textarea{
+    resize: none;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.code-wrapper button{
+    background-color: #ff00fc;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.switch {
+    position: relative;
+    height: 1.5rem;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(100, 116, 139, 0.377);
+    transition: all .3s ease;
+  }
+  
+  .switch:checked {
+    background-color: #00ff2b;
+  }
+  
+  .switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.5rem - 1.6rem);
+    top: calc(1.5rem - 1.6rem);
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+    transition: all .3s ease;
+  }
+  
+  .switch:hover::before {
+    box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+  }
+  
+  .switch:checked:hover::before {
+    box-shadow: 0 0 0px 8px rgba(77, 175, 80, .15)
+  }
+  
+  .switch:checked:before {
+    transform: translateX(100%);
+    border-color: #00ff2b;
+  }
+/* ==========Box-Shadow-Ends========== */

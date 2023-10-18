@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawsome cdn -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Box Shadow Generator</title>
+</head>
+
+<body>
+    <!-- ==========Box-Shadow-Starts========== -->
+    <div class="container bx-shadow">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="result">
+                    <div id="element"></div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="sliders">
+                    <div class="slider-wrapper">
+                        <label for="h-shadow">Horizontal Shadow : </label>
+                        <input type="range" id="h-shadow" max="100" min="-100" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label for="v-shadow">Vertical Shadow : </label>
+                        <input type="range" id="v-shadow" max="100" min="-100" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label for="blur-radius">Blur Radius : </label>
+                        <input type="range" id="blur-radius" max="100" min="0" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label for="spread-radius">Spread Radius : </label>
+                        <input type="range" id="spread-radius" max="50" min="-50" value="0">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label for="shadow-color">Shadow Color : </label>
+                        <input type="color" id="shadow-color">
+                    </div>
+                    <div class="slider-wrapper">
+                        <label for="shadow-color-opacity">Shadow Color Opacity : </label>
+                        <input type="range" id="shadow-color-opacity" max="1" min="0" step="0.1" value="1">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="shadow-inset">Inset Shadow : </label>
+                        <input type="checkbox" class="switch" checked="true" id="shadow-inset">
+                    </div>
+                </div>
+                <div class="code-wrapper">
+                    <textarea rows="2" id="code"></textarea>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Box-Shadow-Ends========== -->
+
+
+    <!-- Jquery cdn -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
